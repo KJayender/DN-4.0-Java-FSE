@@ -1,5 +1,5 @@
 package com.example;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -34,3 +34,4 @@ public class CalculatorTest {
         calc.divide(12, 0); // This should throw an IllegalArgumentException
     }
 }
+//excericse1
