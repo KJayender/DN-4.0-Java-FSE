@@ -14,6 +14,8 @@ Exercise	Description
 6	Use annotation-based bean definitions
 7	Implement constructor and setter injection
 8	Implement AOP for logging method execution times
+
+
 🧹 Exercise 4: Maven Project Setup
 pom.xml
 
@@ -48,6 +50,8 @@ pom.xml
     </plugin>
   </plugins>
 </build>
+
+
 ⚙️ Exercise 5: Spring IoC Configuration (XML)
 applicationContext.xml
 
@@ -64,6 +68,8 @@ applicationContext.xml
     <aop:aspectj-autoproxy />
     <bean id="loggingAspect" class="com.library.aspect.LoggingAspect"/>
 </beans>
+
+
 📾 Exercise 6: Annotation-Based Bean Configuration
 BookRepository.java
 
@@ -73,6 +79,8 @@ public class BookRepository {
         return "Clean Code";
     }
 }
+
+
 BookService.java
 
 @Service
@@ -92,11 +100,15 @@ public class BookService {
         System.out.println("Book: " + bookRepository.getBookTitle());
     }
 }
+
+
 📉 Exercise 7: Constructor and Setter Injection
 Already handled in BookService:
 
 Constructor is available for possible injection (not used by Spring here)
 Setter is annotated with @Autowired for setter-based DI
+
+
 🪝 Exercise 8: Spring AOP (Aspect-Oriented Programming)
 LoggingAspect.java
 
@@ -114,6 +126,8 @@ public class LoggingAspect {
         return result;
     }
 }
+
+
 🚀 How to Run
 MainApp.java
 
@@ -124,11 +138,15 @@ public class MainApp {
         bookService.displayBook();
     }
 }
+
+
 Run via Maven:
 mvn compile exec:java -Dexec.mainClass=com.library.MainApp
 📌 Notes
 Uses Spring 5.3.x for compatibility with XML + annotation configs.
 No web module or DB needed; purely focused on Spring Core concepts.
+
+
 📁 Package Structure
 com.library
 ├── MainApp.java
