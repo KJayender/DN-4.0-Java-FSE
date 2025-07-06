@@ -3,16 +3,16 @@
 ---
 ##1. Java Persistence API (JPA)
 ---
-JSR 338 specification for object-relational mapping (ORM)
-Defines how Java objects are persisted to relational databases
-Does NOT provide an implementation
-Requires a provider like Hibernate, EclipseLink, etc.
+-JSR 338 specification for object-relational mapping (ORM)
+-Defines how Java objects are persisted to relational databases
+-Does NOT provide an implementation
+-Requires a provider like Hibernate, EclipseLink, etc.
 
 Example providers:
 ---
-Hibernate
-EclipseLink
-OpenJPA
+-Hibernate
+-EclipseLink
+-OpenJPA
 
 🛠️ Code Example: JPA with Hibernate (manually)
 JAVA
