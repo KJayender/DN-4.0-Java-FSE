@@ -1,5 +1,6 @@
-🧠 Hands-on 4: Difference Between JPA, Hibernate, and Spring Data JPA
-1. Java Persistence API (JPA)
+#🧠 Hands-on 4: Difference Between JPA, Hibernate, and Spring Data JPA
+---
+##1. Java Persistence API (JPA)
 JSR 338 specification for object-relational mapping (ORM)
 Defines how Java objects are persisted to relational databases
 Does NOT provide an implementation
