@@ -122,12 +122,15 @@ public Integer addEmployee(Employee employee){
 EmployeeRepository.java
 
 
+
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     // No implementation needed
 }
 
 
+
 EmployeeService.java
+
 
 
 @Autowired
@@ -138,16 +141,7 @@ public void addEmployee(Employee employee) {
     employeeRepository.save(employee);
 }
 
+
+
 ---
 
-
-## 🆚 Summary Table
-
-Feature	JPA (Standard)	Hibernate	Spring Data JPA
-Specification or Tool	Specification	ORM Tool & JPA implementation	Abstraction over JPA/Hibernate
-Boilerplate Code	Moderate	High	Very Low
-Configuration File	persistence.xml	hibernate.cfg.xml	application.properties or YAML
-Transaction Handling	Manual	Manual	Auto via @Transactional
-Session Management	EntityManager	Session	Handled by Spring
-Repository Abstraction	No	No	Yes (CrudRepository, JpaRepository)
-Auto Table Generation	Yes (via provider)	Yes	Yes
